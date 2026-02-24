@@ -7,7 +7,7 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 
 # Install production deps only
-RUN npm ci --omit=dev
+RUN npm install
 
 
 # ---------- Stage 2: Runtime ----------
